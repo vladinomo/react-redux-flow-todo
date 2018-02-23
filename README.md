@@ -13,17 +13,20 @@ react+redux プロジェクトのボイラープレート。create-react-app で
 ## Stack
 
 * React
-
+* Redux
 * prettier
 * eslint
 
 ## Todo
 
-以下を導入して動作確認
+-[]以下を導入して動作確認
 
-* Redux
 * flow
 
-* ディレクトリ構成分ける
+* react-router?
 
-* テストスイート見直し(優先度低)
+-[] Mock 実装
+
+-[] ディレクトリ構成分ける
+
+-[] テストスイート見直し(優先度低)
