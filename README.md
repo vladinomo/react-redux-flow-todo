@@ -1,29 +1,29 @@
-
 ## これはなに
 
-react+reduxプロジェクトのボイラープレート。create-react-appで生成されたコードがベース
+react+redux プロジェクトのボイラープレート。create-react-app で生成されたコードがベース
 
 ## 使い方
 
-このレポジトリをローカルにクローンしてディレクトリに移動し```npm install```
+このレポジトリをローカルにクローンしてディレクトリに移動し`npm install`
 
-+ ```npm start```で開発用サーバー起動```localhost:3000```でページにアクセス
-+ ```npm test```でテスト実行
-+ ```npm build```でプロダクション用ビルドを生成
+* `npm start`で開発用サーバー起動`localhost:3000`でページにアクセス
+* `npm test`でテスト実行
+* `npm build`でプロダクション用ビルドを生成
 
 ## Stack
 
-+ React
+* React
+
+* prettier
+* eslint
 
 ## Todo
 
 以下を導入して動作確認
 
-+ Redux
-+ prettier
-+ eslint
-+ flow
+* Redux
+* flow
 
-+ ディレクトリ構成分ける
+* ディレクトリ構成分ける
 
-+ テストスイート見直し(優先度低)
+* テストスイート見直し(優先度低)
