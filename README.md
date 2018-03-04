@@ -16,12 +16,13 @@ react+redux プロジェクトのボイラープレート。create-react-app で
 * Redux
 * prettier
 * eslint
+* flow
 
 ## Todo
 
--[]以下を導入して動作確認
+-[] flow と vs-code 連携
 
-* flow
+-[]以下を導入して動作確認
 
 * react-router?
 
