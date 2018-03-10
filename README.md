@@ -22,7 +22,7 @@ react+redux プロジェクトのボイラープレート。create-react-app で
 
 -[] flow と vs-code 連携
 
--[]以下を導入して動作確認
+-[] 以下を導入して動作確認
 
 * react-router?
 
@@ -30,4 +30,6 @@ react+redux プロジェクトのボイラープレート。create-react-app で
 
 -[] ディレクトリ構成分ける
 
--[] テストスイート見直し(優先度低)
+-[] reducer 回りのテスト環境整える
+
+-[] 使い方 readme に書く(vscode で prettier 動かすのにそっちに入れとくものとかその辺)
