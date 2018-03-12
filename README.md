@@ -23,7 +23,6 @@ react+redux プロジェクトのボイラープレート。create-react-app で
 -[] 以下を導入して動作確認
 
 * styled-component
-* fix => babel-eslint と　 eslint-plugin-jsx-a11y が peer dependencies に含まれないって怒られるのでなんとかする
 
 * react-router
 
