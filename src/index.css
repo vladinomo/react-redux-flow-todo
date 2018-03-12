@@ -1,6 +1,22 @@
+/* reset css */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: Helvetica, "游ゴシック", "san-serif";
   letter-spacing: 0.1em;
+}
+
+/* animations */
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

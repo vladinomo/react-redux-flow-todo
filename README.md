@@ -20,11 +20,12 @@ react+redux プロジェクトのボイラープレート。create-react-app で
 
 ## Todo
 
--[] flow と vs-code 連携
-
 -[] 以下を導入して動作確認
 
-* react-router?
+* styled-component
+* fix => babel-eslint と　 eslint-plugin-jsx-a11y が peer dependencies に含まれないって怒られるのでなんとかする
+
+* react-router
 
 -[] Mock 実装
 
