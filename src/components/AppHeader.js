@@ -1,15 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
 
+const style = {
+  header: {
+    backgroundColor: '#222',
+    height: '150px',
+    padding: '20px',
+    color: 'white',
+  },
+};
+
 const AppHeader = () => (
-  <header
-    style={{
-      backgroundColor: '#222',
-      height: '150px',
-      padding: '20px',
-      color: 'white',
-    }}
-  >
+  <header style={style.header}>
     <img
       src={logo}
       style={{
