@@ -3,5 +3,16 @@
   "javascript.format.enable": false,
   "flow.useNPMPackagedFlow": true,
   "prettier.eslintIntegration": true,
-  "javascript.validate.enable": false
+  "javascript.validate.enable": false,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "html": {
+      "attr_quotes": "single"
+    },
+    "jsx": {
+      "self_closing_tag": true
+    }
+  }
 }
