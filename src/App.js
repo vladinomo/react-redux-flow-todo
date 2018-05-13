@@ -1,13 +1,7 @@
 import React from 'react';
 
-import AppHeader from './components/AppHeader';
-import AppMain from './components/AppMain';
+import Top from './components/pages/Top/index';
 
-const App = () => (
-  <div style={{ textAlign: 'center' }}>
-    <AppHeader />
-    <AppMain />
-  </div>
-);
+const App = () => <Top />;
 
 export default App;

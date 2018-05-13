@@ -25,8 +25,8 @@ const AppHeader = () => (
         fontSize: '1.5em',
       }}
     >
-      Welcome to React
-    </h1>
+      Welcome to React{' '}
+    </h1>{' '}
   </header>
 );
 

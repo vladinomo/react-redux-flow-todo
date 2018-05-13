@@ -1,5 +1,7 @@
 # react-redux-flow-todo
 
+this is a WIP project...
+
 ## これはなに
 
 flow+redux で簡単な todo アプリを実装+プロジェクトのボイラープレート化する。create-react-app で生成されたコードがベース
