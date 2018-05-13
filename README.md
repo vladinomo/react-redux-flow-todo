@@ -1,6 +1,10 @@
+# react-redux-flow-todo
+
+this is a work-in-progress prpject...
+
 ## これはなに
 
-react+redux プロジェクトのボイラープレート。create-react-app で生成されたコードがベース
+flow+redux で簡単な todo アプリを実装+プロジェクトのボイラープレート化する。create-react-app で生成されたコードがベース
 
 ## 使い方
 
@@ -20,15 +24,15 @@ react+redux プロジェクトのボイラープレート。create-react-app で
 
 ## Todo
 
--[] 以下を導入して動作確認
+-[] 以下を導入して動作確認してんぷれーとにする
 
 * styled-component
 
-* react-router
+* react-router(or regexp-router)
 
 * recompose?
 
--[] Mock 実装 1.reduxなし 2. reduxあり. 3.reduxとrouter
+-[] Mock 実装 1.redux なし 2. redux あり. 3.redux と router
 
 -[] ディレクトリ構成分ける
 
@@ -36,4 +40,6 @@ react+redux プロジェクトのボイラープレート。create-react-app で
 
 -[] 使い方 readme に書く(vscode で prettier 動かすのにそっちに入れとくものとかその辺)
 
--[] いじぇーくと！してビルド関連ファイル自分でいじる
+-[] ブラウザ API と Store の同期を何処かでもつ
+
+-[](優先度:低)いじぇーくと！してビルド関連ファイル自分でいじる
