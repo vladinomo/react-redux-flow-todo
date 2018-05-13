@@ -1,7 +1,19 @@
 import React from 'react';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 
-import Top from './components/pages/Top/index';
+// reducer
+import reducer from './reducers';
 
-const App = () => <Top />;
+// import Top from './components/pages/Top/index';
+import Counter from './components/pages/Counter/index';
+
+// counter reducer
+
+const App = () => (
+  <Provider store={createStore(reducer)}>
+    <Counter />
+  </Provider>
+);
 
 export default App;
