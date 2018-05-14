@@ -3,8 +3,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
 
-// reducer
-// import { counter } from '../../../reducers';
+// actions
+import * as CounterAction from '../../../reducers';
 
 // components
 import AppHeader from '../../organisms/AppHeader/index';
@@ -23,9 +23,17 @@ const CounterPage = (props: any) => (
 
 const CounterMain = (props: any) => (
   <Wrapper>
-    <ButtonWrapper>
-      <Button>increase!</Button>
-    </ButtonWrapper>
+    <ButtonContainer>
+      <ButtonWrapper>
+        <Button onClick={() => props.add(3)}>Add 3</Button>
+      </ButtonWrapper>
+      <ButtonWrapper>
+        <Button onClick={() => props.increase()}>increase!</Button>
+      </ButtonWrapper>
+      <ButtonWrapper>
+        <Button onClick={() => props.decrease()}>decrease!</Button>
+      </ButtonWrapper>
+    </ButtonContainer>
     <p> {props.value} </p>
   </Wrapper>
 );
@@ -36,8 +44,11 @@ const Wrapper = styled.div`
   width: 100%;
 `;
 
+const ButtonContainer = styled.div``;
+
 const ButtonWrapper = styled.div`
   padding: 20px;
+  display: inline-block;
 `;
 
 const Button = styled.button`
@@ -48,6 +59,7 @@ const Button = styled.button`
   color: #fff;
   border-bottom: solid 4px #627295;
   border-radius: 3px;
+  width: 100px;
   :active {
     -ms-transform: translateY(4px);
     -webkit-transform: translateY(4px);
@@ -57,6 +69,10 @@ const Button = styled.button`
 `;
 
 // enhancer
-const enhancer = connect(mapStateToProps);
+const enhancer = connect(mapStateToProps, {
+  add: CounterAction.add,
+  increase: CounterAction.increase,
+  decrease: CounterAction.decrease,
+});
 
 export default enhancer(CounterPage);
