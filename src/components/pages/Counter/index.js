@@ -10,28 +10,25 @@ import { connect } from 'react-redux';
 import AppHeader from '../../organisms/AppHeader/index';
 import Layout from '../../templates/DefaultLayout';
 
-const mapStateToProps = state => ({
-  value: state.counter.value,
+const mapStateToProps = ({ counter }) => ({
+  value: counter.value,
 });
 
 const CounterPage = (props: any) => (
   <Layout>
     <AppHeader />
-    <CounterMain value={props.value} />
+    <CounterMain {...props} />
   </Layout>
 );
 
-const CounterMain = (props: any) => {
-  console.log(props);
-  return (
-    <Wrapper>
-      <ButtonWrapper>
-        <Button>increase!</Button>
-      </ButtonWrapper>
-      <p> {props.value} </p>
-    </Wrapper>
-  );
-};
+const CounterMain = (props: any) => (
+  <Wrapper>
+    <ButtonWrapper>
+      <Button>increase!</Button>
+    </ButtonWrapper>
+    <p> {props.value} </p>
+  </Wrapper>
+);
 
 const Wrapper = styled.div`
   font-size: large;
