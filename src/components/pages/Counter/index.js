@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { connect } from 'react-redux';
 
 // actions
-import * as CounterAction from '../../../reducers';
+import * as CounterAction from '../../../reducers/counter';
 
 // components
 import AppHeader from '../../organisms/AppHeader/index';
@@ -25,13 +25,13 @@ const CounterMain = (props: any) => (
   <Wrapper>
     <ButtonContainer>
       <ButtonWrapper>
-        <Button onClick={() => props.add(3)}>Add 3</Button>
+        <Button onClick={() => props.add(3)}> Add 3 </Button>
       </ButtonWrapper>
       <ButtonWrapper>
-        <Button onClick={() => props.increase()}>increase!</Button>
+        <Button onClick={() => props.increase()}> increase! </Button>
       </ButtonWrapper>
       <ButtonWrapper>
-        <Button onClick={() => props.decrease()}>decrease!</Button>
+        <Button onClick={() => props.decrease()}> decrease! </Button>
       </ButtonWrapper>
     </ButtonContainer>
     <p> {props.value} </p>
